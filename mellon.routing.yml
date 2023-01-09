@@ -1,0 +1,22 @@
+mellon.check:
+  path: '/mell-on/check'
+  defaults:
+    _title: 'MellON Check'
+    _controller: '\Drupal\mellon\Controller\MellonController::check'
+  requirements:
+    _user_is_logged_in: "false"
+mellon.verify:
+  path: '/mell-on/verify'
+  defaults:
+    _title: 'MellON Verify'
+    _controller: '\Drupal\mellon\Controller\MellonController::verify'
+  requirements:
+    _user_is_logged_in: "false"
+
+mellon.settings:
+  path: '/admin/config/people/mellon'
+  defaults:
+    _title: 'MellON Settings'
+    _form: 'Drupal\mellon\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

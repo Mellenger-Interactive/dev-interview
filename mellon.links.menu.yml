@@ -1,0 +1,6 @@
+mellon.settings:
+  title: MellON
+  description: "*************"
+  parent: user.admin_index
+  route_name: mellon.settings
+  weight: 10
